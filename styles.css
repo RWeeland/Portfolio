@@ -1,0 +1,92 @@
+
+body{
+    display: grid;
+    grid-template-areas:
+        "connect header"
+        "aside main";
+        
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 10rem 1fr;
+    margin: 0;
+    height:100vh;
+}
+#connect{
+grid-area: connect;
+}
+
+#header{
+grid-area: header;
+border-bottom: solid 0.1rem black;
+}
+
+#connect img{
+    height: 6rem;
+    width: auto;
+    margin-left: 4rem;
+
+}
+#header h1{
+   text-align: center;
+}
+#side-bar{
+grid-area: aside;
+border-right: solid 0.1rem black;
+min-height: 100%;
+
+
+
+}
+#main{
+grid-area: main;
+height: calc(100vh - 5rem);
+overflow-y: auto;
+scroll-behavior: smooth;
+}
+
+
+/*About Section */
+
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+#about img{
+    height: 20rem;
+}
+
+#about-text{
+    margin-top: 2rem;
+    width: 30rem;
+}
+#about-text img{
+    height: 4rem;
+}
+
+/* Projects Section */
+#projects-div{
+    margin-top: 100rem;
+}
+
+#projects-div h2{
+    text-align: center;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+  
+   justify-content: space-around
+   
+}
+
+.card{
+    width: 20rem;
+    text-align: center;
+    border: black 0.06rem solid;
+}
+.card img{
+    width: 16rem
+}
