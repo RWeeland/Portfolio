@@ -33,17 +33,17 @@ line-height: normal;
 }
 
 h3{
-font-size: 1.25rem;
+font-size: 1.75rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
 
 p{
-font-size: 1rem;
+font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
-line-height: 1.5rem;
+line-height: 1.75rem;
 }
 
 header{
@@ -74,7 +74,8 @@ nav a:hover{
 }
 
 #home{
-    height: 100vh;
+    min-height:60rem;
+    max-height:80rem;
 }
 
 #home img{
@@ -82,7 +83,7 @@ nav a:hover{
     height: auto;
 }
 #about{
-    min-height: 90vh;
+    margin: 10rem 0 12rem 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -104,6 +105,11 @@ nav a:hover{
     flex-wrap: wrap;
 }
 
+#about-content a{
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+}
 
 @keyframes fadeOut{
     from {
@@ -131,8 +137,8 @@ nav a:hover{
     color: #121212;
     background-color: #f76b5b;
     padding: 1rem 2rem 1rem 2rem;
-    width: 8rem;
-    margin-top: 2.5rem;
+    width: 13rem;
+    margin: 2.5rem 0 2.5rem 0;
     font-family: "Fira Sans";
     font-size: 1.25rem;
     font-style: normal;
@@ -159,9 +165,9 @@ nav a:hover{
     height: 2rem;
 }
 #projects{
-    min-height: 100vh;
+    min-height:50rem;
+    max-height:80rem;
 }
-
 #projects h2{
     text-align: center;
     margin-bottom: 10rem;
@@ -177,11 +183,15 @@ nav a:hover{
 .card{
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    flex-basis: 20rem;
     height: 24rem;
     text-align: center;
     background-color:#282828;
     border-radius: 0.75rem;
+}
+
+.card img{
+flex-basis: 18rem;
 }
 
 .card h3{
