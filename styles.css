@@ -280,6 +280,7 @@ dialog a{
      }
      dialog{
         width: 75%;
+        overflow-x: scroll;
      }
 
 
