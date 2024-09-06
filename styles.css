@@ -184,10 +184,12 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     flex-basis: 20rem;
-    height: 24rem;
+    height: 26rem;
     text-align: center;
     background-color:#282828;
     border-radius: 0.75rem;
+    padding:2rem;
+    
 }
 
 .card img{
@@ -209,11 +211,31 @@ flex-basis: 18rem;
 
 dialog{
     width: 50%;
+    padding: 2rem;
     background-color: #282828;
     color: #FFF;
-    border-style: none;
     border-radius: 1rem;
+    overflow-y:hidden;
 }
+
+dialog h2{
+    margin-bottom: -1rem;
+}
+
+dialog img{
+    margin-bottom: -2rem;
+}
+
+dialog::backdrop{
+    background-color:rgba(40, 40, 40, 0.8) ;
+}
+
+dialog a{
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+}
+
 
 .flex-column{
     display: flex;
@@ -256,9 +278,13 @@ dialog{
      .card{
         margin-bottom:4rem;
      }
+     dialog{
+        width: 75%;
+     }
 
-#about-content{
-    width:15rem;}
+
+    #about-content{
+        width:15rem;}
 
     .button{
         padding: 1rem 1rem 1rem 1rem;
