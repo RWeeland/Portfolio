@@ -94,6 +94,8 @@ nav a:hover{
 #about img{
     height: 25rem;
     width: auto;
+    margin-top: -5rem;
+
 }
 
 #about-content{
@@ -103,6 +105,13 @@ nav a:hover{
     flex-direction: column;
     animation: fadeIn 1s;
     flex-wrap: wrap;
+}
+
+#about-content img{
+    width: 6rem;
+    height: auto;
+    align-self: center;
+    margin: 1rem;
 }
 
 #about-content a{
@@ -215,7 +224,6 @@ dialog{
     background-color: #282828;
     color: #FFF;
     border-radius: 1rem;
-    overflow-y:hidden;
 }
 
 dialog h2{
@@ -236,6 +244,22 @@ dialog a{
     text-decoration: none;
 }
 
+.dia-button{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    font-size: 2rem;
+    position:absolute;
+    float: right;
+    top: 0.5rem;
+    right: 0.2rem;
+    color:#8b8b8b;
+    border-style: none;
+ }
+
+ .dia-button:hover{
+    color:#ff9887;
+ }
 
 .flex-column{
     display: flex;
@@ -282,7 +306,6 @@ dialog a{
         width: 75%;
         overflow-x: scroll;
      }
-
 
     #about-content{
         width:15rem;}

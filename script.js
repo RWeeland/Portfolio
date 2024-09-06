@@ -8,7 +8,7 @@ const projectsObj = [{
     id: "fakePeople",
     img: "./Media/Fake People Real Questions.png",
     title: "Fake People Real Questions",
-    text: "Fake People Real Questions is a simple website that will help people to learn how to read the tarrot. <br><br> This website will generate a randomized question that a reader could ask to the tarot aswell as a random face to give it a more organic and spontaneous feel.<br><br> Funilly enough since there are AI generated images sometimes we get kids asking very profound questions, which makes me gigle.",
+    text: "Fake People Real Questions is a simple website that will help people learn how to read the tarot. <br><br> This website will generate a randomized question that a reader could ask the tarot as well as a random face to give it a more organic and spontaneous feel.<br>Funnily enough since there are AI-generated images sometimes we get kids asking very profound questions, which makes me giggle.",
     link: "https://rweeland.github.io/FakePeopleRealQuestions/",},
     {
     id: "magicPort",
@@ -34,9 +34,6 @@ const locationIndex= (element) => {
         `
     })
     
-//todo Item: add a functionality to render different modals depending on the button clicked.
-// the modal needs an image, a close cross, text explaining the proijects and a button to go to the project
-// next task is to render the card elements with a for loop
 const dialog = document.querySelector("dialog")
 const closeBtn = document.getElementById("close-btn")
 const openMod = () =>{
@@ -75,7 +72,8 @@ dialog.addEventListener("click", e => {
     <img src="${img}">
     <h2>${title}</h2>
     <p>${text}</p>
-    <a href="${link}"><div class="button">Go to Projects</div></a>
+    <a href="${link}" target="_blank"><div class="button">Go to Project</div></a>
+    <button class="dia-button" onclick="closeMod()">X</button>
     `
     openMod()
  }
